@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -u --ignore-existing --exclude="0x00-shell_basics/" "index.html" ../
+rsync -u --exclude "0x00-shell_basics" index.html ..
