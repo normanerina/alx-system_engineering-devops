@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(compgen -v) $(compgen -e) | tr ' ' '\n'
+compgen -v; compgen -e; declare -F
