@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(compgen -v)" "$(compgen -e)" | tr ' ' '\n' | declare -F
+echo "$(compgen -e | tr ' ' '\n')" | grep -v '()$'
