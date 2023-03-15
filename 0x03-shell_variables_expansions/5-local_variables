@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(compgen -v | tr '\n' ' ') $(compgen -e | tr '\n' ' ') $(declare -F | awk '{print $3}' | tr '\n' ' ')"
+echo "$(compgen -v)" "$(compgen -e)" | tr ' ' '\n' | declare -F
