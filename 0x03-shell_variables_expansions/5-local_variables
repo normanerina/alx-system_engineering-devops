@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(compgen -e | tr ' ' '\n')" | grep -v '()$'
+echo $(printenv | tr '\n' ' ')
