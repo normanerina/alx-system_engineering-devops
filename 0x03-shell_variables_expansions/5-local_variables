@@ -1,2 +1,2 @@
 #!/bin/bash
-( set -o posix ; set ) | less
+echo $(compgen -v) $(compgen -e) | tr ' ' '\n'
